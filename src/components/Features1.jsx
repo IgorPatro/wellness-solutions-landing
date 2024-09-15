@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
-import feature1 from "../assets/images/feature1.jpg";
-import feature2 from "../assets/images/feature2.jpg";
-import feature3 from "../assets/images/feature3.jpg";
-import feature4 from "../assets/images/feature4.jpg";
+import feature1 from "../assets/images/feature1.png";
+import feature2 from "../assets/images/feature2.png";
+import feature3 from "../assets/images/feature3.png";
+import feature4 from "../assets/images/feature4.png";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
 export const Features1 = () => {
@@ -49,7 +49,7 @@ export const Features1 = () => {
                 <img
                   src={feature1.src}
                   alt="Feature image 1"
-                  className="rounded-xl  main-border-gray mx-auto sm:mx-unset"
+                  className="rounded-xl main-border-gray mx-auto sm:mx-unset"
                   aria-label="Feature image 1"
                 />
               </div>

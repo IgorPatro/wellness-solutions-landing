@@ -2,13 +2,16 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 import { InvitationModal } from "./InvitationModal";
-import featuresdiagonal from "../assets/images/featuresdiagonal.jpg";
+import featuresdiagonal from "../assets/images/featuresdiagonal.png";
 
-export const FeaturesDiagonal = () => {
+export const About = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className="lg:mb-16 w-full flex flex-col justify-center items-center bg-bgDark1">
+    <section
+      className="lg:mb-16 w-full flex flex-col justify-center items-center bg-bgDark1"
+      id="about"
+    >
       <div className="shape-divider-bottom-1665696614">
         <svg
           data-name="Layer 1"

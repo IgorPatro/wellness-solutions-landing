@@ -1,9 +1,6 @@
 import { motion } from "framer-motion";
 
 import { QuoteIcon } from "../assets/icons/QuoteIcon";
-import testimonial1 from "../assets/images/testimonial1.png";
-import testimonial2 from "../assets/images/testimonial2.png";
-import testimonial3 from "../assets/images/testimonial3.png";
 
 const testimonialsData = [
   {
@@ -11,27 +8,27 @@ const testimonialsData = [
     customerTitle: "Founder of Dashflow",
     content:
       "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
-    image: testimonial1,
   },
   {
     customerName: "John Watkins",
     customerTitle: "Founder of Dashflow",
     content:
       "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
-    image: testimonial2,
   },
   {
     customerName: "John Watkins",
     customerTitle: "Founder of Dashflow",
     content:
       "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
-    image: testimonial3,
   },
 ];
 
 export const Testimonials = () => (
-  <section className="w-full flex justify-center pt-16 mb-16 lg:mb-32 bg-bgDark2 relative">
-    <div className="absolute -top-16" id="feedback" />
+  <section
+    className="w-full flex justify-center pt-16 mb-16 lg:mb-32 bg-bgDark2 relative"
+    id="testimonials"
+  >
+    <div className="absolute -top-16" />
     <div className="flex flex-col w-full lg:w-[1150px] justify-center">
       <motion.div
         initial={{ opacity: 0 }}
@@ -55,16 +52,7 @@ export const Testimonials = () => (
               </div>
               <div className="content-text-white">"{testimonial.content}"</div>
               <div className="flex mt-4 mb-2 xl:mt-8 xl:mb-4">
-                <div>
-                  <img
-                    src={testimonial.image.src}
-                    alt="Customer avatar"
-                    width="45px"
-                    height="5px"
-                    aria-label={testimonial.customerName}
-                  />
-                </div>
-                <div className="flex flex-col ml-4">
+                <div className="flex flex-col">
                   <div className="content-text-white font-medium">
                     {testimonial.customerName}
                   </div>

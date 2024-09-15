@@ -25,7 +25,10 @@ const FAQData = [
 ];
 
 export const FAQ = () => (
-  <section className="relative -mt-8 sm:mt-0 pt-12 sm:pt-16 pb-16 bg-blueGray-50 overflow-hidden">
+  <section
+    className="relative -mt-8 sm:mt-0 pt-12 sm:pt-16 pb-16 bg-blueGray-50 overflow-hidden"
+    id="faq"
+  >
     <div className="absolute -top-10" id="FAQ" />
     <motion.div
       initial={{ opacity: 0 }}
@@ -88,7 +91,7 @@ const FAQBox = ({ defaultOpen, title, content }) => {
         >
           <path
             d="M4.16732 12.5L10.0007 6.66667L15.834 12.5"
-            stroke="#4F46E5"
+            stroke="rgb(255, 215, 0)"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"

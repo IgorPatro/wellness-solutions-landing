@@ -2,13 +2,13 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { TailcastLogo } from "../assets/logos/TailcastLogo";
-import { GithubIcon } from "../assets/icons/GithubIcon";
 
 const navbarLinks = [
   { label: "Home", href: "/#home", ariaLabel: "Home" },
-  { label: "Features", href: "/#features", ariaLabel: "Features" },
-  { label: "Pricing", href: "/#pricing", ariaLabel: "Pricing" },
-  { label: "Feedback", href: "/#feedback", ariaLabel: "Feedback" },
+  { label: "O producie", href: "/#features", ariaLabel: "Features" },
+  { label: "O nas", href: "/#about", ariaLabel: "Pricing" },
+  { label: "Produkty", href: "/#products", ariaLabel: "Pricing" },
+  { label: "Opinie", href: "/#testimonials", ariaLabel: "Feedback" },
   { label: "FAQ", href: "/#FAQ", ariaLabel: "FAQ" },
 ];
 
@@ -18,7 +18,7 @@ export const Navbar = () => {
   return (
     <>
       <nav
-        className="w-full h-20 flex flex-col justify-center items-center fixed bg-bgDark1 lg:bg-bgDarkTransparent z-40 lg:backdrop-blur-xl"
+        className="w-full h-20 flex flex-col justify-center items-center fixed bg-bgDark1 lg:bg-transparent z-40 lg:backdrop-blur-xl"
         aria-label="Main navigation"
       >
         <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
@@ -34,7 +34,7 @@ export const Navbar = () => {
                   <TailcastLogo />
                 </div>
                 <div className="text-white font-['Inter'] font-bold text-xl">
-                  Tailcast
+                  Wellness Solutions
                 </div>
               </div>
             </a>
@@ -56,24 +56,6 @@ export const Navbar = () => {
                   {label}
                 </a>
               ))}
-            </div>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
-            exit={{ opacity: 0 }}
-          >
-            <div className="grow basis-0 justify-end hidden lg:flex">
-              <a
-                className="text-white main-border-gray rounded-xlbg-bgDark2 hover:bg-bgDark3 border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-                href="https://github.com/matt765/Tidestream"
-                target="_blank"
-                aria-label="source code"
-              >
-                <GithubIcon />
-                <span className="pt-px">Source code</span>
-              </a>
             </div>
           </motion.div>
           <div
@@ -107,14 +89,6 @@ export const Navbar = () => {
                   {label}
                 </a>
               ))}
-              <a
-                className="outlined-button pl-6 pr-8 pt-2 pb-2  flex"
-                href="https://github.com/matt765/Tidestream"
-                target="_blank"
-              >
-                <GithubIcon />
-                Source code
-              </a>
             </div>
           </motion.div>
         )}
