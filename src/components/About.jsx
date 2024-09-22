@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 import { InvitationModal } from "./InvitationModal";
-import featuresdiagonal from "../assets/images/featuresdiagonal.png";
+import about from "../assets/images/about.png";
 
 export const About = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -36,7 +36,7 @@ export const About = () => {
           <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
             <span className="block-subtitle">Accelerate Your Success</span>
             <h2 className="mt-10 mb-8 text-4xl lg:text-5xl block-big-title">
-              Build &amp; Launch without problems
+              O naszej firmie
             </h2>
             <p className="mb-16 text-secondaryText leading-loose">
               Our platform enables you to launch your data-driven projects with
@@ -53,7 +53,7 @@ export const About = () => {
           </div>
           <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
             <img
-              src={featuresdiagonal.src}
+              src={about.src}
               alt="Feature image"
               className="rounded-xl  main-border-gray"
             />
