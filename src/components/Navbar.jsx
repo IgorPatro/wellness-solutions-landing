@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { TailcastLogo } from "../assets/logos/TailcastLogo";
 
@@ -69,30 +69,21 @@ export const Navbar = () => {
         </div>
       </nav>
       {/* Mobile navbar */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
-            exit={{ opacity: 0 }}
-          >
-            <div className="flex fixed bottom-0 left-0 flex-col lg:hidden bg-bgDark1 w-full h-[calc(100vh-80px)] items-center gap-10 pb-10 border-y border-solid border-bgDark3 pt-10 z-20">
-              {navbarLinks.map(({ label, href, ariaLabel }) => (
-                <a
-                  key={href}
-                  className="text-white lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
-                  href={href}
-                  onClick={() => setIsOpen(false)}
-                  aria-label={ariaLabel}
-                >
-                  {label}
-                </a>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {isOpen && (
+        <div className="flex fixed bottom-0 left-0 flex-col lg:hidden bg-bgDark1 w-full h-[calc(100vh-80px)] items-center gap-10 pb-10 border-y border-solid border-bgDark3 pt-10 z-20">
+          {navbarLinks.map(({ label, href, ariaLabel }) => (
+            <a
+              key={href}
+              className="text-white lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
+              href={href}
+              onClick={() => setIsOpen(false)}
+              aria-label={ariaLabel}
+            >
+              {label}
+            </a>
+          ))}
+        </div>
+      )}
     </>
   );
 };

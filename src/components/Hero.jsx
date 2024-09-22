@@ -19,7 +19,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className="text-secondaryColor text-sm sm:text-base  mb-6 sm:mt-32 mt-16  font-bold">
+          <h3 className="text-secondaryColor text-sm sm:text-base mb-6 sm:mt-32 mt-16  font-bold">
             Sprawdź naszą najnowszą ofertę
           </h3>
         </motion.div>
@@ -28,7 +28,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.05 }}
         >
-          <h1 className="mt-2 sm:mt-2 text-4xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold text-primaryText leading-loose px-8 sm:px-20 md:px-24 lg:px-24">
+          <h1 className="mt-2 text-4xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold text-primaryText px-8 sm:px-20 md:px-24 lg:px-24">
             Uczyń ogród swoją świątynią
           </h1>
         </motion.div>
