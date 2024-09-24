@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
+import logo from "../assets/images/logo.png";
 
 const navbarLinks = [
   { label: "Home", href: "/#home", ariaLabel: "Home" },
@@ -29,14 +29,12 @@ export const Navbar = () => {
             exit={{ opacity: 0 }}
           >
             <a href="/#home" aria-label="Home">
-              <div className="flex justify-start items-center grow basis-0">
-                <div className="text-white mr-2 text-6xl">
-                  <TailcastLogo />
-                </div>
-                <div className="text-white font-['Inter'] font-bold text-xl">
-                  Wellness Solutions
-                </div>
-              </div>
+              <img
+                src={logo.src}
+                alt="Logo"
+                className="h-5"
+                aria-label="Feature image 1"
+              />
             </a>
           </motion.div>
           <motion.div
