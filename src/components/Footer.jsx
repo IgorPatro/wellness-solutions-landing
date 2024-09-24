@@ -6,15 +6,26 @@ import { TwitterIcon } from "../assets/icons/TwitterIcon";
 const footerData = [
   {
     title: "Menu",
-    items: ["Home", "Produkty", "FAQ"],
+    items: [
+      { label: "Home", href: "/#home" },
+      { label: "Produkty", href: "/#products" },
+      { label: "FAQ", href: "/#FAQ" },
+    ],
   },
   {
     title: "Przydatne linki",
-    items: ["Terms & Conditions", "Polityka prywatności"],
+    items: [
+      { label: "Terms & Conditions", href: "/#home" },
+      { label: "Polityka prywatności", href: "/#home" },
+    ],
   },
   {
     title: "Firma",
-    items: ["O produkcie", "O nas", "Opinie"],
+    items: [
+      { label: "O producie", href: "/#features" },
+      { label: "O nas", href: "/#about" },
+      { label: "Opinie", href: "/#testimonials" },
+    ],
   },
 ];
 
@@ -34,15 +45,7 @@ export const Footer = () => {
                 </div>
               </div>
               <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
-                Szybkie motto
-                <a
-                  href="https://bootstrapious.com/p/bootstrap-4-dark-admin"
-                  target="_blank"
-                  className="text-gray-100 ml-1.5 "
-                  aria-label="Dark Admin Dashboard"
-                >
-                  here.
-                </a>
+                Balie, sauny, jacuzzi - dla ciebie i twoich bliskich
               </p>
               <div className="w-36 mx-auto lg:mx-0">
                 <a
@@ -75,13 +78,13 @@ export const Footer = () => {
                 </h3>
                 <ul>
                   {footerData[0].items.map((item, index) => (
-                    <li key={`${item}-${index}`} className="mb-4">
+                    <li key={`${item.label}-${index}`} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label={item}
+                        href={item.href}
+                        aria-label={item.label}
                       >
-                        {item}
+                        {item.label}
                       </a>
                     </li>
                   ))}
@@ -93,13 +96,13 @@ export const Footer = () => {
                 </h3>
                 <ul>
                   {footerData[1].items.map((item, index) => (
-                    <li key={`${item}-${index}`} className="mb-4">
+                    <li key={`${item.label}-${index}`} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label={item}
+                        href={item.href}
+                        aria-label={item.label}
                       >
-                        {item}
+                        {item.label}
                       </a>
                     </li>
                   ))}
@@ -111,13 +114,13 @@ export const Footer = () => {
                 </h3>
                 <ul>
                   {footerData[2].items.map((item, index) => (
-                    <li key={`${item}-${index}`} className="mb-4">
+                    <li key={`${item.label}-${index}`} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
-                        href="#"
-                        aria-label={item}
+                        href={item.href}
+                        aria-label={item.label}
                       >
-                        {item}
+                        {item.label}
                       </a>
                     </li>
                   ))}

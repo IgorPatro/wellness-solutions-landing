@@ -20,7 +20,7 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <h3 className="text-secondaryColor text-sm sm:text-base mb-6 sm:mt-32 mt-16  font-bold">
-            Sprawdź naszą najnowszą ofertę
+            Balie, sauny, jacuzzi - dla ciebie i twoich bliskich
           </h3>
         </motion.div>
         <motion.div
@@ -37,10 +37,10 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <h2 className="text-secondaryText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quo
-            quam deleniti dolorum molestiae quaerat cupiditate ipsa possimus
-            neque ab!
+          <h2 className="text-secondaryText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-24 ">
+            Przenieś luksusowe spa do swojego ogrodu dzięki produktom, które
+            łączą nowoczesną technologię z naturalnymi materiałami dla
+            wyjątkowego relaksu w domowym zaciszu
           </h2>
         </motion.div>
         <motion.div
@@ -56,13 +56,12 @@ export const Hero = () => {
             >
               Skontaktuj się
             </button>
-            <button
+            <a
               className="rounded-lg font-bold border-primaryColor border text-primaryText flex justify-center items-center hover:bg-[#806C00] cursor-pointer transition w-64 sm:w-52 h-12 mb-2 sm:mb-0"
-              onClick={() => setIsModalOpen(true)}
-              aria-label="Get started"
+              href="#features"
             >
               Zobacz więcej
-            </button>
+            </a>
           </div>
         </motion.div>
       </div>

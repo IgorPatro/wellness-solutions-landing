@@ -34,27 +34,29 @@ export const Features2 = () => (
 
         <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
           <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-            <span className="block-subtitle">Make Data-Driven Decisions</span>
+            <span className="block-subtitle">Nasze cechy</span>
             <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
               Ogród w nowym wydaniu
             </h2>
             <p className="mb-12 text-secondaryText leading-loose">
-              Monitor and track data issues with ease using our intuitive and
-              efficient issue tracking system. Stay ahead of potential problems
-              and improve your workflow.
+              Zmień swoją przestrzeń ogrodową w oazę relaksu i luksusu. Nasze
+              produkty premium nie tylko wzbogacają estetykę Twojego ogrodu, ale
+              także tworzą miejsce, w którym możesz się odprężyć po ciężkim
+              dniu. Stawiamy na najwyższą jakość, nowoczesny design i trwałość,
+              aby każdy element był funkcjonalny i wyjątkowy.
             </p>
             <ul className="mb-6 text-primaryText">
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Collaborative environment</span>
+                <span>Wyjątkowa jakość</span>
               </li>
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Smart issue categorization</span>
+                <span>Design, który inspiruje</span>
               </li>
               <li className="mb-4 flex">
                 <CheckArrowIcon />
-                <span>Customizable notifications</span>
+                <span>Komfort i luksus</span>
               </li>
             </ul>
           </div>

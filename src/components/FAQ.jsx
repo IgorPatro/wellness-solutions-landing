@@ -3,24 +3,24 @@ import { motion } from "framer-motion";
 
 const FAQData = [
   {
-    question: "Can I upgrade or downgrade my plan at any time?",
+    question: "Jaki jest termin realizacji zlecenia?",
     answer:
-      "Yes, you can easily upgrade or downgrade your plan at any time. Simply navigate to the account settings in your dashboard and choose the desired plan. The changes will be reflected immediately, and any adjustments in pricing will be applied on your next billing cycle. Our support team is more than happy to provide guidance and recommendations.",
+      "Termin realizacji wynosi od 30 do 45 dni w zależności od aktualnej liczby zamówień oraz indywidualnych wymagań projektu. Zachęcamy do kontaktu w celu uzyskania szczegółowych informacji na temat postępu prac oraz ewentualnych ustaleń związanych z konkretnym zamówieniem. Nasz zespół jest zawsze dostępny, aby odpowiedzieć na wszelkie pytania i dostosować harmonogram do Twoich potrzeb.",
   },
   {
-    question: "How to claim your 25% discount offer?",
+    question: "Czy transport jest wliczony w cenę?",
     answer:
-      "To claim your 25% discount, simply sign up for an account and enter the promotional code at checkout. The discount will be applied automatically to your purchase.",
+      "Koszt transportu ustalany jest indywidualnie po dokładnej wycenie zamówienia i nie jest wliczony w podstawową ofertę. Zależy to od odległości, miejsca dostawy oraz ewentualnych dodatkowych wymagań dotyczących montażu. Zapewniamy elastyczne podejście do każdego zamówienia, dlatego skontaktuj się z nami, aby uzyskać szczegółową kalkulację transportu dopasowaną do Twojej lokalizacji.",
   },
   {
-    question: "What's your refund policy?",
+    question: "Czy wykonują Państwo niestandardowe projekty?",
     answer:
-      "We offer a 30-day money-back guarantee on all our plans. If you're not satisfied with our product, simply contact our support team within 30 days of purchase for a full refund.",
+      "Tak, specjalizujemy się w realizacji niestandardowych projektów. Jeśli masz pomysł na produkt, który nie znajduje się w naszej standardowej ofercie, serdecznie zapraszamy do kontaktu. Jesteśmy otwarci na współpracę i chętnie zaprojektujemy rozwiązanie dostosowane do Twoich indywidualnych potrzeb i preferencji. Nasz zespół projektowy z przyjemnością doradzi i pomoże w stworzeniu unikalnego produktu spełniającego Twoje wymagania.",
   },
   {
-    question: "How to get support for the product?",
+    question: "Jak wygląda rozliczenie?",
     answer:
-      "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",
+      "Proces rozliczenia przebiega w dwóch etapach: 50% wartości zamówienia płatne jest po podpisaniu umowy, co umożliwia nam rozpoczęcie produkcji. Pozostałe 50% płatne jest po dostarczeniu produktu do Ciebie, co daje gwarancję, że otrzymasz to, czego oczekiwałeś. Takie podejście zapewnia przejrzystość i komfort dla obu stron, a także umożliwia pełną kontrolę nad realizacją zamówienia.",
   },
 ];
 
@@ -38,7 +38,9 @@ export const FAQ = () => (
     >
       <div className="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full">
         <div className="md:max-w-4xl mx-auto">
-          <p className="mb-7 block-subtitle text-center">Have any questions?</p>
+          <p className="mb-7 block-subtitle text-center">
+            O to pytają nas nasi klienci
+          </p>
           <h2 className="mb-16 block-big-title text-center">
             Często zadawane pytania
           </h2>

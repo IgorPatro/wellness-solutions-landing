@@ -16,29 +16,46 @@ export const Features1 = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
-          <div className="w-full lg:w-1/2 mb-12 lg:mb-0 pt-10 lg:pt-0">
+          <div className="w-full lg:w-1/2 mb-12 lg:mb-0 pt-10 lg:pt-16">
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-              <span className="block-subtitle">Embrace Innovation</span>
+              <span className="block-subtitle">Innowacyjny wygląd</span>
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
-                Najlepsze sauny
+                Nasza oferta
               </h2>
               <p className="mb-10 text-secondaryText leading-loose">
-                Discover a new level of data analysis with our innovative and
-                user-friendly platform. Transform your business needs with
-                actionable insights.
+                Odkryj luksus, który wprowadza relaks na nowy poziom. Nasze
+                sauny to nie tylko przestrzeń do odprężenia, ale prawdziwe
+                dzieła sztuki, które łączą elegancję i funkcjonalność. W ofercie
+                znajdziesz sauny dopasowane do różnych preferencji, od
+                klasycznych beczkowych, po nowoczesne owalne modele.
               </p>
               <ul className="mb-6 text-primaryText">
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Real-time data visualization</span>
+                  <span>
+                    <b>Sauny beczkowe</b> – Idealne dla miłośników tradycyjnego
+                    wyglądu i wyjątkowego klimatu
+                  </span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Advanced predictive analytics</span>
+                  <span>
+                    <b>Sauny owalne</b> – Więcej przestrzeni i nowoczesny design
+                  </span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Seamless integration with APIs</span>
+                  <span>
+                    <b>Balie schładzające</b> – Po intensywnej sesji w saunie,
+                    zanurz się w orzeźwiająco zimnej wodzie
+                  </span>
+                </li>
+                <li className="mb-4 flex">
+                  <CheckArrowIcon />
+                  <span>
+                    <b>Balie jacuzzi</b> – Zanurz się w gorącej wodzie i ciesz
+                    się odprężającym masażem bąbelków
+                  </span>
                 </li>
               </ul>
             </div>
