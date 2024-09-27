@@ -71,8 +71,10 @@ export const Hero = () => {
       <img
         src={hero.src}
         alt="Feature image 1"
-        className="w-screen h-screen absolute top-0 left-0"
+        className="w-screen h-screen absolute top-0 left-0 object-cover"
         aria-label="Feature image 1"
+        loading="lazy"
+        decoding="async"
       />
     </section>
   );
