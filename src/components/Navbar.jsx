@@ -32,7 +32,7 @@ export const Navbar = () => {
               <img
                 src={logo.src}
                 alt="Logo"
-                className="h-5"
+                className="h-10"
                 aria-label="Feature image 1"
               />
             </a>

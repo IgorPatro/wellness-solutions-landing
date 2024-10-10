@@ -15,8 +15,8 @@ const footerData = [
   {
     title: "Przydatne linki",
     items: [
-      { label: "Terms & Conditions", href: "/#home" },
-      { label: "Polityka prywatności", href: "/#home" },
+      { label: "Terms & Conditions", href: "/privacy" },
+      { label: "Polityka prywatności", href: "/privacy" },
     ],
   },
   {
@@ -32,14 +32,14 @@ const footerData = [
 export const Footer = () => {
   return (
     <footer aria-label="Site footer">
-      <div className="pt-10  lg:pt-20 lg:pb-16 bg-bgDark1 radius-for-skewed ">
+      <div className="pt-10 pb-5 lg:pt-20 lg:pb-16 bg-bgDark1 radius-for-skewed">
         <div className="container mx-auto px-4 w-4/5 md:w-11/12 lg:w-10/12 xl:w-4/5 2xl:w-2/3">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/3 mb-16 lg:mb-0">
               <img
                 src={logo.src}
                 alt="Logo"
-                className="h-5"
+                className="h-10 m-auto lg:m-0"
                 aria-label="Feature image 1"
               />
               <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
@@ -48,7 +48,8 @@ export const Footer = () => {
               <div className="w-36 mx-auto lg:mx-0">
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 pt-[0.55rem] outlined-button"
-                  href="#"
+                  href="https://www.facebook.com/61563397123353"
+                  target="_blank"
                   aria-label="Facebook"
                 >
                   <FacebookIcon />
@@ -125,6 +126,11 @@ export const Footer = () => {
                 </ul>
               </div>
             </div>
+          </div>
+          <hr className="my-6 border-gray-700" />
+          <div className="flex lg:flex-row lg:text-left text-center flex-col justify-between text-gray-400 text-sm">
+            <span>Copyright © 2024 Wellness Solutions</span>
+            <span>NIP: 5170425445, KRS: 0000973762, REGON: 522108510</span>
           </div>
         </div>
       </div>
