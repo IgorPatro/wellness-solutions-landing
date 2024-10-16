@@ -5,10 +5,10 @@ export const Article = ({ articleData }) => {
   return (
     <div className="flex justify-center bg-bgDark2 relative pt-2">
       <div className="px-2 sm:px-4">
-        <article className=" p-8 text-center rounded-3xl w-full lg:w-[1200px] 2xl:w-[1400px] mb-24 mt-16 sm:mt-24">
+        <article className="p-8 text-center rounded-3xl w-full lg:w-full 2xl:w-[1400px] mb-24 mt-16 sm:mt-24">
           <header className="mb-12">
             <div className="text-base text-secondaryText my-4">{date}</div>
-            <h1 className="text-[2rem] xs:text-[2.8rem] lg:text-[3.5rem] font-bold text-primaryText mb-4">
+            <h1 className="text-[1.8rem] xs:text-[2.6rem] lg:text-[3.2rem] font-bold text-primaryText mb-4">
               {title}
             </h1>
             <p className="text-lg text-secondaryText mb-4">{subtitle}</p>

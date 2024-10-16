@@ -43,9 +43,17 @@ export const Footer = () => {
                 className="h-10 m-auto lg:m-0"
                 aria-label="Feature image 1"
               />
-              <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
-                Balie, sauny, jacuzzi - dla Ciebie i Twoich bliskich
-              </p>
+              <div className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
+                <span className="flex flex-col gap-2 mb-4">
+                  Balie, sauny, jacuzzi - dla Ciebie i Twoich bliskich
+                </span>
+                <a href="tel:+48535292958">+48 535 292 958</a>
+                <br />
+                <a href="mailto:hello@wellnesssolutions.pl">
+                  hello@wellnesssolutions.pl
+                </a>
+              </div>
+
               <div className="w-36 mx-auto lg:mx-0">
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 pt-[0.55rem] outlined-button"
