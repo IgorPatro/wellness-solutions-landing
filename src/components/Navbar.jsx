@@ -69,7 +69,7 @@ export const Navbar = () => {
       </nav>
       {/* Mobile navbar */}
       {isOpen && (
-        <div className="flex fixed bottom-0 left-0 flex-col lg:hidden bg-bgDark1 w-full h-[calc(100vh-80px)] items-center gap-10 pb-10 border-y border-solid border-bgDark3 pt-10 z-20">
+        <div className="flex fixed bottom-0 left-0 flex-col lg:hidden bg-bgDark1 w-full h-[calc(100vh-80px)] items-center gap-4 pb-10 border-y border-solid border-bgDark3 pt-10 z-20">
           {navbarLinks.map(({ label, href, ariaLabel }) => (
             <a
               key={href}
