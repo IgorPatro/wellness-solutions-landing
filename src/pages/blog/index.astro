@@ -1,0 +1,15 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Navbar } from "../../components/Navbar.jsx";
+import { Article } from "../../components/Article.jsx";
+import { Footer } from "../../components/Footer.jsx";
+import "../../styles/Theme.css";
+import { ScrollUpButton } from "../../components/ScrollUpButton";
+---
+
+<Layout title="Wellness Solutions | Blog">
+  <Navbar client:load />
+  <!-- <Article articleData={articleData} /> -->
+  <Footer />
+  <ScrollUpButton client:load />
+</Layout>

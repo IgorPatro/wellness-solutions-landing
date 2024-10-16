@@ -10,6 +10,7 @@ const footerData = [
       { label: "Home", href: "/#home" },
       { label: "Produkty", href: "/#products" },
       { label: "FAQ", href: "/#FAQ" },
+      { label: "Blog", href: "/blog" },
     ],
   },
   {

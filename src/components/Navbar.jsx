@@ -10,6 +10,7 @@ const navbarLinks = [
   { label: "Produkty", href: "/#products", ariaLabel: "Pricing" },
   { label: "Opinie", href: "/#testimonials", ariaLabel: "Feedback" },
   { label: "FAQ", href: "/#FAQ", ariaLabel: "FAQ" },
+  { label: "Blog", href: "/blog", ariaLabel: "FAQ" },
 ];
 
 export const Navbar = () => {

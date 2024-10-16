@@ -1,0 +1,184 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Navbar } from "../../components/Navbar.jsx";
+import { Article } from "../../components/Article.jsx";
+import { Footer } from "../../components/Footer.jsx";
+import picture from "../../assets/images/roznice-miedzy-piecami-na-drewno-a-piecami-elektrycznymi-w-saunach.png";
+import "../../styles/Theme.css";
+import { ScrollUpButton } from "../../components/ScrollUpButton";
+
+const articleData = {
+  title: "Piece na drewno vs piece elektryczne - koszty i wygoda użytkowania",
+  subtitle:
+    "Wybór pieca do sauny to kluczowa decyzja, która ma wpływ nie tylko na komfort korzystania, ale również na koszty eksploatacji i utrzymania. Na rynku dominują dwa główne rodzaje pieców: piece na drewno oraz piece elektryczne. Oba rozwiązania mają swoje zalety i wady, a ich wybór zależy od indywidualnych preferencji użytkownika oraz dostępnych warunków instalacyjnych. W tym artykule omówimy najważniejsze różnice między tymi dwoma typami pieców, biorąc pod uwagę takie aspekty jak koszty, wygoda użytkowania, wpływ na środowisko oraz doświadczenie saunowania.",
+  date: "28 września 2024",
+  image: picture.src,
+  content: `
+            <h2>1. Koszty instalacji i użytkowania</h2>
+
+            <h3>Piece na drewno:</h3>
+
+            <p>
+              Piece na drewno wymagają odpowiedniego przygotowania przestrzeni,
+              w tym instalacji komina do odprowadzania spalin, co podnosi koszty
+              początkowe instalacji. Piec na drewno jest często droższy w
+              zakupie niż elektryczny, a koszt drewna może się różnić w
+              zależności od lokalizacji i dostępności surowca. Jednak w dłuższym
+              okresie, jeśli użytkownik ma dostęp do taniego drewna,
+              eksploatacja może być relatywnie niedroga.
+            </p>
+
+            <h3>Zalety:</h3>
+            <ul>
+              <li>
+                Niższy koszt eksploatacji, jeśli masz dostęp do taniego drewna.
+              </li>
+              <li>
+                Może być bardziej opłacalny w miejscach z ograniczonym dostępem
+                do energii elektrycznej.
+              </li>
+            </ul>
+            <h3>Wady:</h3>
+            <ul>
+              <li>Wyższe koszty początkowe (komin, instalacja).</li>
+              <li>Konieczność zakupu i składowania drewna opałowego.</li>
+            </ul>
+
+            <h3>Piece elektryczne:</h3>
+            <p>
+              Piece elektryczne są zazwyczaj tańsze i prostsze w instalacji,
+              ponieważ nie wymagają komina ani specjalistycznej wentylacji.
+              Koszty eksploatacji pieca elektrycznego zależą od stawek za prąd w
+              danym regionie, a dla osób korzystających z sauny regularnie,
+              rachunki za energię mogą być znaczne.
+            </p>
+            <h3>Zalety:</h3>
+            <ul>
+              <li>Niższy koszt instalacji, brak potrzeby komina.</li>
+              <li>
+                Stałe koszty eksploatacyjne, uzależnione od taryf za energię
+                elektryczną.
+              </li>
+            </ul>
+            <h3>Wady:</h3>
+            <ul>
+              <li>
+                Koszt eksploatacji może być wysoki w przypadku intensywnego
+                użytkowania i wysokich cen energii.
+              </li>
+              <li>Ograniczenie w miejscach bez stałego dostępu do prądu.</li>
+            </ul>
+
+            <h2>Wygoda użytkowania</h2>
+            <h3>Piece na drewno:</h3>
+            <p>
+              Piece na drewno oferują bardziej tradycyjne, autentyczne
+              doświadczenie sauny, które wielu użytkowników ceni za klimat i
+              rytuał związany z rozpalaniem ognia. Jednak obsługa pieca na
+              drewno wymaga więcej zaangażowania – konieczność regularnego
+              uzupełniania drewna, kontrolowania temperatury i dbania o
+              odpowiednie warunki spalania może być dla niektórych użytkowników
+              uciążliwa.
+            </p>
+
+            <h3>Zalety:</h3>
+            <ul>
+              <li>Tradycyjne, autentyczne doświadczenie.</li>
+              <li>
+                Samodzielne kontrolowanie temperatury poprzez dodawanie drewna.
+              </li>
+            </ul>
+            <h3>Wady:</h3>
+            <ul>
+              <li>Wymaga więcej czasu i uwagi na obsługę.</li>
+              <li>Konieczność ręcznego rozpalania i monitorowania ognia.</li>
+            </ul>
+
+            <h3>Piece elektryczne:</h3>
+            <p>
+              Piece elektryczne są niezwykle wygodne w użytkowaniu. Wystarczy
+              nacisnąć przycisk, aby rozpocząć nagrzewanie sauny. Wiele
+              nowoczesnych pieców elektrycznych wyposażonych jest w programatory
+              i zdalne sterowanie, co pozwala na precyzyjne ustawienie
+              temperatury i czasu pracy sauny. Brak konieczności fizycznej
+              obsługi sprawia, że piece elektryczne są bardziej komfortowe dla
+              osób, które cenią sobie łatwość i szybkość korzystania z sauny.
+            </p>
+            <h3>Zalety:</h3>
+            <ul>
+              <li>Niezwykła wygoda – obsługa jednym przyciskiem.</li>
+              <li>Możliwość precyzyjnej kontroli temperatury i czasu pracy.</li>
+            </ul>
+            <h3>Wady:</h3>
+            <ul>
+              <li>
+                Brak tradycyjnego doświadczenia sauny związanej z rozpalaniem
+                drewna.
+              </li>
+              <li>
+                Ograniczone w miejscach bez dostępu do prądu lub w przypadku
+                przerw w dostawie energii.
+              </li>
+            </ul>
+
+            <h2>3. Ekologia i wpływ na środowisko</h2>
+            <h3>Piece na drewno:</h3>
+            <p>
+              Korzystanie z pieców na drewno może być bardziej ekologiczne,
+              jeśli drewno pochodzi z odpowiedzialnych źródeł, a jego spalanie
+              odbywa się w sposób optymalny, minimalizując emisję szkodliwych
+              substancji. Jednak nieodpowiednie spalanie drewna może prowadzić
+              do zwiększonego zanieczyszczenia powietrza i emisji pyłów.
+            </p>
+
+            <h3>Piece elektryczne:</h3>
+            <p>
+              Piece elektryczne są bardziej przyjazne dla środowiska w
+              obszarach, gdzie energia elektryczna pochodzi z odnawialnych
+              źródeł, takich jak wiatr czy słońce. W miejscach, gdzie prąd
+              wytwarzany jest głównie z paliw kopalnych, piece elektryczne mogą
+              mieć większy negatywny wpływ na środowisko niż piece na drewno.
+            </p>
+
+            <h2>4. Doświadczenie saunowania</h2>
+            <h3>Piece na drewno:</h3>
+            <p>
+              Piece na drewno oferują niepowtarzalne wrażenia –
+              charakterystyczny zapach spalającego się drewna, delikatny dym
+              unoszący się w powietrzu oraz możliwość samodzielnego
+              kontrolowania intensywności ciepła poprzez dodawanie drewna. To
+              autentyczne doświadczenie sauny fińskiej, które wielu użytkowników
+              uważa za najbardziej relaksujące i odprężające.
+            </p>
+            <h3>Piece elektryczne:</h3>
+            <p>
+              Piece elektryczne oferują bardziej nowoczesne i przewidywalne
+              doświadczenie. Dzięki precyzyjnym programatorom temperatura jest
+              stała, a użytkownik nie musi martwić się o utrzymanie ognia. Dla
+              wielu osób ta wygoda przeważa nad urokiem tradycyjnej sauny na
+              drewno.
+            </p>
+
+            <h2>Podsumowanie</h2>
+            <p>
+              Wybór między piecem na drewno a elektrycznym zależy od
+              indywidualnych preferencji użytkownika. Jeśli zależy Ci na
+              autentycznym, tradycyjnym doświadczeniu sauny i masz możliwość
+              instalacji pieca na drewno – to rozwiązanie może być idealne.
+              Jeśli jednak priorytetem jest wygoda, szybkość i łatwość
+              użytkowania, piec elektryczny z pewnością spełni Twoje
+              oczekiwania. Oba typy pieców oferują doskonałe korzyści zdrowotne,
+              a decyzja sprowadza się do tego, co jest dla Ciebie ważniejsze –
+              tradycja czy nowoczesność.
+            </p>
+  `,
+  footer: "Mikołaj Ligęzka",
+};
+---
+
+<Layout title={articleData.title}>
+  <Navbar client:load />
+  <Article articleData={articleData} />
+  <Footer />
+  <ScrollUpButton client:load />
+</Layout>

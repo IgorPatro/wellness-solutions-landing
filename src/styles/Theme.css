@@ -41,3 +41,27 @@
 @font-face {
   font-display: var(--fontsource-Inter-font-display, optional);
 }
+
+#blog-content {
+  @apply flex flex-col gap-4;
+}
+
+#blog-content h2 {
+  @apply text-primaryText text-3xl font-bold tracking-normal mt-14;
+}
+
+#blog-content h3 {
+  @apply text-primaryText text-xl font-bold tracking-normal mt-6;
+}
+
+#blog-content h4 {
+  @apply text-primaryText text-lg font-bold tracking-normal mt-6;
+}
+
+#blog-content p {
+  @apply text-lg;
+}
+
+#blog-content ul {
+  @apply list-disc pl-6 text-lg flex flex-col gap-2;
+}

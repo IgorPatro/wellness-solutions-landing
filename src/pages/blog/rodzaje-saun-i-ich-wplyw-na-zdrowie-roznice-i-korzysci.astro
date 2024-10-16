@@ -1,0 +1,164 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Navbar } from "../../components/Navbar.jsx";
+import { Article } from "../../components/Article.jsx";
+import { Footer } from "../../components/Footer.jsx";
+import picture from "../../assets/images/rodzaje-saun-i-ich-wplyw-na-zdrowie-roznice-i-korzysci.png";
+import "../../styles/Theme.css";
+import { ScrollUpButton } from "../../components/ScrollUpButton";
+
+const articleData = {
+  title: "Rodzaje saun i ich wpływ na zdrowie - różnice i korzyści",
+  subtitle:
+    "Korzystanie z sauny stało się jednym z najbardziej popularnych sposobów na poprawę zdrowia i samopoczucia. Każda sauna – bez względu na jej typ – oferuje szereg ogólnych korzyści zdrowotnych, takich jak detoksykacja, poprawa krążenia czy redukcja stresu. Różne rodzaje saun mają jednak swoje specyficzne cechy, które wpływają na sposób, w jaki ciało reaguje na ciepło. Przyjrzyjmy się bliżej ogólnym korzyściom zdrowotnym saun oraz rzeczywistym różnicom między poszczególnymi typami saun.",
+  date: "10 lipca 2024",
+  image: picture.src,
+  content: `
+<h2>Ogólne korzyści zdrowotne korzystania z saun</h2>
+
+            <h3>1. Detoksykacja</h3>
+            <p>
+              Pocenie się podczas korzystania z sauny wspomaga eliminację toksyn
+              z organizmu, takich jak metale ciężkie i inne zanieczyszczenia,
+              które nagromadziły się w wyniku działania środowiska, diety czy
+              stylu życia.
+            </p>
+
+            <h3>2. Poprawa krążenia</h3>
+            <p>
+              Ciepło w saunie powoduje rozszerzenie naczyń krwionośnych, co
+              zwiększa przepływ krwi i poprawia dotlenienie komórek. Regularne
+              korzystanie z sauny może przyczynić się do poprawy zdrowia
+              sercowo-naczyniowego.
+            </p>
+
+            <h3>3. Redukcja stresu i poprawa samopoczucia</h3>
+            <p>
+              Przebywanie w saunie sprzyja wydzielaniu endorfin, hormonów
+              szczęścia, co prowadzi do redukcji napięcia i stresu. To skuteczny
+              sposób na relaksację zarówno fizyczną, jak i psychiczną.
+            </p>
+
+            <h3>4. Wspomaganie regeneracji mięśni</h3>
+            <p>
+              Po intensywnym wysiłku fizycznym, sauna może pomóc w szybszej
+              regeneracji mięśni dzięki poprawie krążenia krwi i dostarczaniu
+              większej ilości tlenu do tkanek. Działa kojąco na napięte mięśnie,
+              łagodząc ból i dyskomfort.
+            </p>
+
+            <h3>5. Poprawa kondycji skóry</h3>
+            <p>
+              Ciepło otwiera pory, co sprzyja oczyszczaniu skóry z
+              zanieczyszczeń. Zwiększone krążenie wpływa również na lepsze
+              odżywienie skóry, nadając jej zdrowy blask.
+            </p>
+
+            <h2>Różnice między rodzajami saun</h2>
+
+            <p>
+              Choć wszystkie sauny mają podobne korzyści zdrowotne, różnią się
+              sposobem działania i doświadczeniem, jakie oferują.
+            </p>
+
+            <h3>1. Sauny beczkowe</h3>
+            <p>
+              Sauny beczkowe, jak sama nazwa wskazuje, mają charakterystyczny
+              kształt beczki, co pozwala na równomierne rozprowadzanie ciepła.
+              Zwykle wykonane z drewna cedrowego lub świerkowego, oferują
+              tradycyjne doświadczenie sauny fińskiej (suchej), w której
+              temperatura może sięgać nawet 90°C. Są przeznaczone do użytku na
+              świeżym powietrzu, co dodatkowo potęguje uczucie relaksu i
+              kontaktu z naturą.
+            </p>
+            <h4>Rzeczywiste różnice:</h4>
+            <ul>
+              <li>
+                <strong>Intensywność ciepła:</strong> Sauny beczkowe oferują
+                bardzo wysokie temperatury, co przekłada się na intensywne
+                pocenie się i szybkie rozgrzanie ciała.
+              </li>
+              <li>
+                <strong>Naturalne materiały:</strong> Wykorzystanie drewna ma
+                właściwości terapeutyczne – zapach cedru działa kojąco na układ
+                nerwowy.
+              </li>
+              <li>
+                <strong>Estetyka i funkcjonalność:</strong> Kształt beczki jest
+                nie tylko estetyczny, ale też funkcjonalny, zapewniając
+                optymalne rozprowadzanie ciepła.
+              </li>
+            </ul>
+
+            <h3>2. Sauny infrared (na podczerwień)</h3>
+            <p>
+              Sauny infrared wykorzystują promienie podczerwone do
+              bezpośredniego podgrzewania ciała, a nie powietrza. To oznacza, że
+              temperatura w saunie infrared jest niższa niż w tradycyjnych
+              saunach, często oscylując wokół 40-60°C, co czyni ją bardziej
+              komfortową dla osób, które źle znoszą ekstremalne ciepło.
+              Promienie podczerwone przenikają głębiej w skórę, co intensyfikuje
+              proces detoksykacji.
+            </p>
+            <h4>Rzeczywiste różnice:</h4>
+            <ul>
+              <li>
+                <strong>Głębsze działanie:</strong> Promienie podczerwone
+                docierają głębiej do mięśni i tkanek, co prowadzi do bardziej
+                efektywnej regeneracji mięśni i stawów.
+              </li>
+              <li>
+                <strong>Niższa temperatura:</strong> Dzięki niższej
+                temperaturze, sauna infrared jest odpowiednia dla osób, które
+                preferują delikatniejsze formy sauny lub mają przeciwwskazania
+                do korzystania z wysokich temperatur.
+              </li>
+              <li>
+                <strong>Lepsze efekty detoksykacyjne:</strong> Intensywniejsze
+                pocenie przy niższych temperaturach sprawia, że organizm usuwa
+                więcej toksyn bez nadmiernego obciążenia ciała.
+              </li>
+            </ul>
+
+            <h3>3. Sauny kabinowe</h3>
+            <p>
+              Sauny kabinowe to najbardziej wszechstronny typ sauny, dostępny w
+              różnych wariantach – od saun suchych po parowe. Są większe i
+              bardziej rozbudowane, dzięki czemu mogą pomieścić więcej osób.
+              Temperatury w takich saunach mogą sięgać do 100°C, a wilgotność
+              powietrza może być regulowana, szczególnie w saunach parowych.
+            </p>
+            <h4>Rzeczywiste różnice:</h4>
+            <ul>
+              <li>
+                <strong>Wszechstronność:</strong> Możliwość dostosowania
+                warunków wewnątrz sauny – od suchego powietrza po sauny parowe,
+                co czyni je bardziej uniwersalnymi.
+              </li>
+              <li>
+                <strong>Większa przestrzeń:</strong> Większe kabiny mogą
+                pomieścić kilka osób, co sprzyja rodzinnemu lub grupowemu
+                korzystaniu z sauny.
+              </li>
+              <li>
+                <strong>Dostosowanie wilgotności:</strong> W saunach parowych
+                wilgotność może osiągać nawet 100%, co dodatkowo wspomaga
+                nawilżanie skóry i wspomaga układ oddechowy.
+              </li>
+            </ul>
+
+            <h2>Podsumowanie</h2>
+            <p>Różne rodzaje saun oferują zbliżone korzyści zdrowotne, ale każdy z nich ma unikalne cechy, które odpowiadają różnym potrzebom użytkowników. Sauny beczkowe są idealne dla osób ceniących tradycyjne, intensywne sesje cieplne, sauny infrared sprawdzą się u tych, którzy preferują niższe temperatury i głębsze działanie na mięśnie, natomiast sauny kabinowe oferują największą wszechstronność, zarówno pod względem wielkości, jak i możliwości regulacji warunków wewnętrznych. Niezależnie od wyboru, regularne korzystanie z sauny przynosi liczne korzyści zdrowotne, takie jak detoksykacja, poprawa krążenia, redukcja stresu i wsparcie regeneracji mięśni.</p>
+            <p>Każdy typ sauny ma swoje unikalne zalety, dlatego ważne jest, aby dopasować ją do własnych potrzeb i oczekiwań.</p>
+            <p>Jeżeli poszukujesz świetnego rozwiązania dla swojego ogródka, uzupełnij formularz kontaktowy a my pomożemy dobrać saunę dla Ciebie!</p>
+  `,
+  footer: "Mikołaj Ligęzka",
+};
+---
+
+<Layout title={articleData.title}>
+  <Navbar client:load />
+  <Article articleData={articleData} />
+  <Footer />
+  <ScrollUpButton client:load />
+</Layout>
