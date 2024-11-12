@@ -39,7 +39,7 @@ export const Products = () => {
                   </h3>
                   <div className="flex justify-start items-end">
                     <div className="text-3xl sm:text-4xl font-bold text-primaryText text-left mt-4 mr-2">
-                      12 900 PLN
+                      14 500 PLN
                     </div>
                   </div>
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
@@ -75,7 +75,7 @@ export const Products = () => {
                   </h3>
                   <div className="flex justify-start items-end">
                     <div className="text-3xl sm:text-4xl font-bold text-primaryText text-left mt-4 mr-2">
-                      11 900 PLN
+                      16 500 PLN
                     </div>
                   </div>
                   <p className="mt-8 mb-8 2xl:mb-12 text-gray-500 leading-loose text-left">
@@ -111,7 +111,7 @@ export const Products = () => {
                   </h3>
                   <div className="flex justify-start items-end">
                     <div className="text-3xl sm:text-4xl font-bold text-primaryText text-left mt-4 mr-2">
-                      2 200 PLN
+                      2 900 PLN
                     </div>
                   </div>
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
