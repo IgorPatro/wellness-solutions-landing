@@ -1,7 +1,7 @@
 import { FacebookIcon } from "../assets/icons/FacebookIcon";
 import { InstagramIcon } from "../assets/icons/InstagramIcon";
 import logo from "../assets/images/logo.png";
-import { TwitterIcon } from "../assets/icons/TwitterIcon";
+import { XIcon } from "../assets/icons/XIcon.jsx";
 
 const footerData = [
   {
@@ -68,7 +68,7 @@ export const Footer = () => {
                   href="#"
                   aria-label="Twitter"
                 >
-                  <TwitterIcon />
+                  <XIcon />
                 </a>
                 <a
                   className="inline-block w-10  h-10 mr-2 p-2 pt-[0.55rem] pl-[0.55rem] outlined-button"
@@ -138,8 +138,8 @@ export const Footer = () => {
           </div>
           <hr className="my-6 border-gray-700" />
           <div className="flex lg:flex-row lg:text-left text-center flex-col justify-between text-gray-400 text-sm">
-            <span>Copyright © 2024 Wellness Solutions</span>
-            <span>NIP: 5170425445, KRS: 0000973762, REGON: 522108510</span>
+            <span>Copyright © 2025 Wellness Solutions</span>
+            <span>NIP: 7010510120, REGON: 362648551</span>
           </div>
         </div>
       </div>
