@@ -47,7 +47,7 @@ export const Footer = () => {
                 <span className="flex flex-col gap-2 mb-4">
                   Balie, sauny, jacuzzi - dla Ciebie i Twoich bliskich
                 </span>
-                <a href="tel:+48535292958">+48 535 292 958</a>
+                <a href="tel:+48535292958">+48 609 314 637</a>
                 <br />
                 <a href="mailto:hello@wellnesssolutions.pl">
                   hello@wellnesssolutions.pl

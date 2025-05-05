@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 import { PhoneIcon } from "../assets/icons/PhoneIcon";
 import { EmailIcon } from "../assets/icons/EmailIcon";
@@ -27,7 +27,7 @@ export const InvitationModal = ({ setIsOpen }) => {
             email,
             phone,
           }),
-        }
+        },
       );
 
       if (response.ok) {
@@ -70,7 +70,7 @@ export const InvitationModal = ({ setIsOpen }) => {
                 <ul className="mb-6 mt-4 text-primaryText">
                   <li className="mb-4 flex items-center">
                     <PhoneIcon />
-                    <a href="tel:+48785375312">+48 535 292 958</a>
+                    <a href="tel:+48785375312">+48 609 314 637</a>
                   </li>
                   <li className="mb-4 flex items-center">
                     <EmailIcon />
